@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculadora - Home</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script defer src="js/calculadora.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <ul>
+            <li><a class="nav-link " href="#">
+                    Home
+                </a></li>
+            <li><a class="nav-link " href="history.html">
+                    Historia
+                </a></li>
+            <li><a class="nav-link " href="shop.html">
+                    Tienda
+                </a></li>
+            <li><a class="nav-link " href="contact.html">
+                    Contacto
+                </a></li>
+
+        </ul>
+    </header>
+
+    <main>
+
+        <h3>¡Realiza Cálculos Rápidos y Precisos en un Solo Lugar!</h3>
+        <p>
+
+            Nuestra herramienta está diseñada
+            para simplificar tus cálculos diarios y proporcionarte resultados precisos al instante. Ya sea que necesites
+            realizar operaciones matemáticas simples o cálculos más complejos, estamos aquí para ayudarte. </p>
+        <p>Características Destacadas:</p>
+        <ul>
+            <li>Fácil de Usar: Nuestra calculadora en línea es intuitiva y fácil de usar, lo que la hace accesible
+                para
+                usuarios de todos los niveles de experiencia.</li>
+
+            <li>Amplia Gama de Funciones: Cubrimos una amplia variedad de funciones matemáticas, desde sumas y
+                restas hasta
+                ecuaciones complejas. Encuentra la herramienta que necesitas para tus cálculos específicos.</li>
+
+            <li>Resultados Instantáneos: No pierdas tiempo esperando resultados. Nuestra calculadora proporciona
+                respuestas
+                al instante, lo que te permite avanzar rápidamente en tus proyectos.</li>
+
+            <li>Compatibilidad Multiplataforma: Accede a nuestra calculadora desde cualquier dispositivo, ya sea
+                una
+                computadora, una tablet o un teléfono inteligente. ¡Calcula sobre la marcha!</li>
+        </ul>
+
+
+
+
+        <div class="calculadora">
+
+            <form>
+                <label for="num1">Introduce el primer número</label>
+                <input type="text" id="num1" required>
+
+                <label for="operador">Operación</label>
+                <select id="operador" required>
+                    <option selected disabled value="">Seleccione</option>
+                    <option>Sumar</option>
+                    <option>Restar</option>
+                    <option>Multiplicar</option>
+                    <option>Dividir</option>
+                </select>
+
+                <label for="num2">Introduce el segundo número</label>
+                <input type="text" id="num2" required>
+
+                <button onclick="enviar()" type="button">Resultado</button>
+                <p>Resultado: </p>
+                <p id="resultado"></p>
+
+            </form>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
